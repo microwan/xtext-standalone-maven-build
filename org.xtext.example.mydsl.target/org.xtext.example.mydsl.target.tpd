@@ -1,0 +1,37 @@
+target "org.xtext.example.mydsl.target"
+
+with source allEnvironments configurePhase
+
+location "http://download.eclipse.org/releases/2021-09/"
+{
+	org.eclipse.jdt.feature.group lazy
+	org.eclipse.platform.feature.group lazy
+	org.eclipse.pde.feature.group lazy
+	org.eclipse.draw2d.feature.group lazy
+	org.eclipse.emf.sdk.feature.group lazy
+	org.eclipse.xpand.feature.group lazy
+	org.eclipse.xtend.feature.group lazy
+	org.eclipse.xtend.typesystem.emf.feature.group lazy
+	com.google.inject lazy
+	com.google.guava lazy
+	io.github.classgraph lazy
+	org.apache.commons.cli lazy
+}
+
+location "https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.12.1/" {
+	org.eclipse.emf.mwe2.launcher.feature.group lazy
+	org.eclipse.emf.mwe.utils lazy
+	org.eclipse.emf.mwe.core lazy
+	org.eclipse.emf.mwe2.lib lazy
+	org.eclipse.emf.mwe2.runtime lazy
+	org.eclipse.emf.mwe2.language lazy
+}
+
+location "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.25.0/" {
+	org.eclipse.xtext.sdk.feature.group lazy
+}
+
+location "http://download.itemis.com/updates/"
+{
+	de.itemis.xtext.antlr.sdk.feature.group lazy
+}
